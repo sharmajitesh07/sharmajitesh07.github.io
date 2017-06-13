@@ -1,0 +1,222 @@
+html, body, div, span,
+h1, h2, p,
+a, strong, form,
+table, tbody, thead, tr, th, td
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Droid Serif', serif;
+    background: linear-gradient(to bottom,  #ffffff 0%,#d9d9d9 100%);
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-content, footer, .footer-details,
+.content-placeholder {
+    width: auto;
+    min-width: 500px;
+}
+@media only screen {
+    .col-1, div.col-m-1 {width: 8.33%;}
+    .col-2, div.col-m-2 {width: 16.66%;}
+    .col-3, div.col-m-3 {width: 25%;}
+    .col-4, div.col-m-4 {width: 33.33%;}
+    .col-5, div.col-m-5 {width: 41.66%;}
+    .col-6, div.col-m-6 {width: 50%;}
+    .col-7, div.col-m-7 {width: 58.33%;}
+    .col-8, div.col-m-8 {width: 66.66%;}
+    .col-9, div.col-m-9 {width: 75%;}
+    .col-10, div.col-m-10 {width: 83.33%;}
+    .col-11, div.col-m-11 {width: 91.66%;}
+    .col-12, div.col-m-12 {width: 100%;}
+    .show-for-large-only{display:none !important;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    div.col-1 {width: 8.33%;}
+    div.col-2 {width: 16.66%;}
+    div.col-3 {width: 25%;}
+    div.col-4 {width: 33.33%;}
+    div.col-5 {width: 41.66%;}
+    div.col-6 {width: 50%;}
+    div.col-7 {width: 58.33%;}
+    div.col-8 {width: 66.66%;}
+    div.col-9 {width: 75%;}
+    div.col-10 {width: 83.33%;}
+    div.col-11 {width: 91.66%;}
+    div.col-12 {width: 100%;}
+    .show-for-large-only{display:block !important;}
+}
+.header [class*="col-"] {
+	font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.quantityBox {
+    width: 100%;
+}
+.float-right {
+    float: right;
+}
+.logo {
+    padding: 130px 20px 70px;
+}
+
+.logo-link {
+    display: block;
+    width: 100px;
+    height: 48px;
+    background: url(../images/logo.png) 0 0 no-repeat transparent;
+    background-size: 100px 48px;
+    text-indent: -9999px;
+}
+
+.description {
+    margin: 0 0 65px;
+    padding: 0 20px;
+}
+.description p {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -.5px;
+}
+
+.description-title {
+    margin-bottom: 14px;
+}
+.description-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, .2);
+    letter-spacing: -1px;
+}
+.header div.no-border {
+    border: 0px;
+}
+footer {
+    height: 40px;
+    border-top: 1px solid #000;
+    background: #666;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: -1px;
+    padding: 12px 0 0 20px;
+}
+
+.item-delete {
+    background: url(../images/sprite.png) 0 -23px no-repeat transparent;
+    height: 22px;
+    width: 16px;
+    text-indent: 9999px;
+    display: block;
+}
+.item-delete:hover {
+    background: url(../images/sprite.png) 0 0 no-repeat transparent;
+}
+.basket-submit {
+    float: right;
+    margin: 0 20px 0 0;
+    padding: 9px 5px 11px;
+    border: 0;
+    background: #006;
+    border-radius: 9px;
+    box-shadow: 5px 5px  5px rgba(0, 0, 0, .53);
+    cursor: pointer;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.basket-submit:hover {
+    background: #33f;
+}
+
+.invalid_input {
+    border: 1px solid #f66;
+    color: #f66;
+}
+
+.basket-submit:disabled,
+.basket-submit:disabled:hover {
+    background: #999;
+    cursor: default;
+}
+.quantityBox {
+    width: 30px;
+    height: 18px;
+    padding: 5px 4px;
+    margin: 0 auto;
+    border: 1px solid #999;
+    line-height: 18px;
+    text-align: right;
+}
+
+.quantity a {
+    display: block;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    background: #999;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+.quantity {
+    position: relative;
+    padding-right: 19px;
+    text-align: right;
+    width: 58px;
+}
+.downscale {
+    bottom: 0;
+    width: 15px;
+    padding-right: 6px;
+    line-height: 13px;
+}
+.upscale {
+    top: 0;
+    width: 15px;
+    padding-right: 4px;
+    line-height: 14px;
+}
+.subTotalRow, .vatRow {
+    color: #666;
+}
+.subTotalRow div {
+    padding-top: 38px;
+    height: 24px;
+}
+.vatRow div {
+    padding-top: 5px;
+    height: 24px;
+}
+.totalRow {
+    font-weight: 700;
+}
+#table-container div.row:nth-child(2n) {
+    background: #ddd;
+}
+.quantityHolder {
+    float: left;
+    padding-right: 0px;
+    min-width: 75px;
+}
