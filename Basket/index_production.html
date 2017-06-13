@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Basket</title>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans:700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="build/compiled.css">
+    </head>
+    <body>
+        <div class="row main-content">
+            <div class="show-for-large-only col-3"></div>
+            <div class="col-6 col-m-12 content-placeholder">
+                <h1 class="logo">
+                    <a href="#" class="logo-link">AKQA</a>
+                </h1>
+
+                <div class="description">
+                    <h2 class="description-title">Your Basket</h2>
+                    <p>Items you have added to your basket are shown below.</p>
+                    <p>Adjust the quantities or remove items before continuing your purchase.</p>
+                </div>
+                <div class="row header">
+                    <div class="col-4">Product</div>
+                    <div class="col-2">Price</div>
+                    <div class="col-2 quantityHolder">Qty</div>
+                    <div class="col-2">Cost</div>
+                </div>
+                <div id="table-container">
+                    <div class="row" id="item_1">
+                        <div class="col-4">Cotton T-Shirt, Medium</div>
+                        <div class="col-2">&pound;1.99</div>
+                        <div class="col-2 quantityHolder">
+                            <div class="quantity">
+                                <input class="quantityBox" maxlength="2" min="1" max="10" type="text" value="1"/>
+                            </div>
+                        </div>
+                        <div class="col-2 costField">&pound;1.99</div>
+                        <div class="col-2 deleteIcon">
+                            <a class="item-delete" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                    <div class="row" id="item_2">
+                        <div class="col-4">Baseball Cap, One Size</div>
+                        <div class="col-2">&pound;2.99</div>
+                        <div class="col-2 quantityHolder">
+                            <div class="quantity">
+                                <input class="quantityBox" maxlength="2" min="1" max="10" type="text" value="2"/>
+                            </div>
+                        </div>
+                        <div class="col-2 costField">&pound;5.98</div>
+                        <div class="col-2 deleteIcon">
+                            <a class="item-delete" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                    <div class="row" id="item_3">
+                        <div class="col-4">Swim Shorts, Medium</div>
+                        <div class="col-2">&pound;3.99</div>
+                        <div class="col-2 quantityHolder">
+                            <div class="quantity">
+                                <input class="quantityBox" maxlength="2" min="1" max="10" type="text" value="1"/>
+                            </div>
+                        </div>
+                        <div class="col-2 costField">&pound;3.99</div>
+                        <div class="col-2 deleteIcon">
+                            <a class="item-delete" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row subTotalRow">
+                    <div class="col-8">SubTotal</div>
+                    <div class="col-2" id="subTotal">&pound;11.96</div>
+                </div>
+                <div class="row vatRow">
+                    <div class="col-8">Vat@20%</div>
+                    <div class="col-2" id="vat">&pound;2.39</div>
+                </div>
+                <div class="row">
+                    <div class="col-8">Total Cost</div>
+                    <div class="col-2" id="total">&pound;14.35</div>
+                </div>
+                <div class="row totalRow">
+                    <div class="col-6"></div>
+                    <div class="col-4"><input class="basket-submit" type="submit" value="Buy Now &raquo;"></div>
+                </div>
+            </div>
+            <div class="show-for-large-only col-3"></div>
+        </div>
+        <footer>
+            <div class="footer-details">&copy;2013 AKQA Ltd. Registered in England:2964394</div>
+        </footer>
+        <script src="build/compiled.js"></script>
+    </body>
+</html>
+
