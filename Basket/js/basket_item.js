@@ -92,12 +92,12 @@ RowClass.prototype = {
 		this.currentView.find('.quantity')
 		.append($('<a/>', {
             'class': 'upscale',
-            href: 'javascript:void(0)',
+            href: '#',
             text: '+'
         }))
 		.append($('<a/>', {
             'class': 'downscale',
-            href: 'javascript:void(0)',
+            href: '#',
             text: '-'
         }));
 	},
@@ -109,4 +109,4 @@ RowClass.prototype = {
 		this.subscribeToEvents();
 		return this;
 	}
-}
+};
